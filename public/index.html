@@ -59,6 +59,22 @@
            margin-left: 6px;
             color: #fff; /* Set the color of the video icon */
         }
+         /* Base styling for the buttons */
+  .country-button {
+    text-align: center;
+  }
+
+  /* Media query for screens less than 768px */
+  @media (max-width: 768px) {
+    .country-buttons-container {
+      flex-direction: column;
+    }
+
+    .country-button {
+      width: 100%; /* Make buttons take full width */
+      margin-bottom: 10px; /* Add some spacing between buttons */
+    }
+  }
   </style>
     <!-- ===============================================-->
     <!--    Stylesheets-->
@@ -188,36 +204,37 @@
                 
                 
 
-                <!-- <div role="group" aria-label="Country Buttons" style="padding-top: -20px; display: flex; justify-content: space-evenly;">
-                 
-                  <div style="text-align: center;">
+                <div role="group" aria-label="Country Buttons" class="country-buttons-container" style="padding-top: -20px; display: flex; justify-content: space-evenly; flex-wrap: wrap;">
+                  <div class="country-button">
                     <img src="assets/img/hero/europe.png" height="60" alt="Europe">
                     <br/>
-                    <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">europe</button>
-                </div> 
-                  <div style="text-align: center;">
-                      <img src="assets/img/hero/usa.png" height="60" alt="USA">
-                      <br/>
-                      <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">USA</button>
+                    <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">Europe</button>
                   </div>
-                  <div style="text-align: center;">
-                    <img src="assets/img/hero/uk.png" height="60" alt="Uk">
+                
+                  <div class="country-button">
+                    <img src="assets/img/hero/usa.png" height="60" alt="USA">
+                    <br/>
+                    <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">USA</button>
+                  </div>
+                
+                  <div class="country-button">
+                    <img src="assets/img/hero/uk.png" height="60" alt="UK">
                     <br/>
                     <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">UK</button>
-
-                </div> 
-              <div style="text-align: center;">
-                  <img src="assets/img/hero/canada.png" height="60" alt="Canada">
-                  <br/>
-                  <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">Canada</button>
-              </div> 
-              <div style="text-align: center;">
-                <img src="assets/img/hero/aus.png" height="60" alt="Australia">
-                <br/>
-                <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">Australia</button>
-            </div>
-              </div>   -->
-
+                  </div>
+                
+                  <div class="country-button">
+                    <img src="assets/img/hero/canada.png" height="60" alt="Canada">
+                    <br/>
+                    <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">Canada</button>
+                  </div>
+                
+                  <div class="country-button">
+                    <img src="assets/img/hero/aus.png" height="60" alt="Australia">
+                    <br/>
+                    <button class="btn btn-primary btn-lg mt-2 mb-3 border-0 primary-btn-shadow">Australia</button>
+                  </div>
+                </div>
 
 
 
