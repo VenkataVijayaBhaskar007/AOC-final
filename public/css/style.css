@@ -11,7 +11,7 @@
     src: url(../webfonts/bromega-Bold.ttf);
 }
 
-
+html, body {width: auto!important; overflow-x: hidden!important} 
 
 /*======================
    02. Basic css
